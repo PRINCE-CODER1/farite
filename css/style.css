@@ -892,7 +892,7 @@ footer {
 }
 .input-box {
   /* width: 100%; */
-  padding: 0.8vw;
+  padding: 0.9vw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -902,6 +902,8 @@ footer {
 }
 #form-btn {
   padding: 0;
+  width: 100%;
+  height: 100%;
   border: none;
   outline: none;
   border-radius: 10px;
@@ -911,10 +913,6 @@ footer {
   letter-spacing: 0px;
   font-family: regu;
   transition: all 0.2s;
-}
-#form-btn:hover {
-  background-color: #968777;
-  color: #fff;
 }
 
 /* media query */
@@ -1013,13 +1011,45 @@ footer {
   }
   .footer-inputs {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+  }
+  .footer-inputs form {
+    margin-left: 1vw;
+  }
+  .input-msg input {
+    padding: 4.1vw;
+  }
+  .input-box {
+    padding: 4vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c0ac96;
+    border-radius: 3px;
   }
 }
 @media (max-width: 600px) {
   .footer-inputs {
     display: flex;
     gap: 0px;
+  }
+  .footer-inputs form {
+    margin-left: 3vw;
+  }
+  .input-msg input {
+    padding: 4.1vw;
+  }
+  .input-box {
+    /* width: 100%; */
+    padding: 4vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c0ac96;
+    border-radius: 3px;
   }
   .pstors-img {
     width: 500px;
