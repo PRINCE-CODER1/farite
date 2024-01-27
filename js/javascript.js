@@ -75,6 +75,7 @@ gsap.to(".scroll-up", {
   },
 });
 
+// menu bar logic
 function menubar() {
   const menu = document.querySelector(".accordion");
   menu.classList.toggle("menu");
@@ -96,6 +97,8 @@ accordionItems.forEach((item) => {
     }
   });
 });
+
+// parallax effext
 gsap.to(".parallax-eff", {
   scrollTrigger: {
     trigger: ".parallax-eff",
@@ -121,6 +124,8 @@ function hidethumb() {
     hidethumb.style.top = "75.2%";
   }
 }
+
+// progress-logic-start here
 
 var playButton = document.querySelector(".slider-timer");
 var isAutoplayEnabled = false;
@@ -158,6 +163,9 @@ gridimg.forEach((gshow) => {
     gridclose3.style.display = "block";
   });
 });
+
+// toggleZoom effect
+
 function toggleZoom() {
   var image = document.querySelectorAll("#pole");
   image.forEach((zoom) => {
