@@ -936,6 +936,9 @@ footer {
   .res-bars {
     display: flex;
   }
+  .res-bars i {
+    font-size: 4vw;
+  }
   .img-txt {
     max-width: 100%;
     gap: 3vw;
@@ -1015,6 +1018,9 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .res-bars i {
+    font-size: 7vw;
+  }
   .img-txt {
     max-width: 100%;
     gap: 3vw;
